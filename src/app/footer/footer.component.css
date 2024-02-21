@@ -1,0 +1,79 @@
+.footer-container {
+  background-color: #2c3e50; /* Dark shade for footer */
+  color: #ecf0f1; /* Light text color for contrast */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.footer-text {
+  margin: 5px 0;
+  padding: 2px;
+}
+
+.footer-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .footer-text {
+    font-size: 12px;
+  }
+}
+
+/* Stylish separators for a cleaner look */
+.footer-text:not(:last-child)::after {
+  content: "|";
+  color: #ecf0f1;
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+.clickable {
+  color: #ecf0f1;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.clickable:hover {
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly around items */
+  align-items: center; /* Align items vertically */
+  background-color: #34495e; /* Deep, professional blue */
+  color: #ecf0f1; /* Light text for contrast */
+  padding: 10px 0;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle elevation effect */
+}
+
+.footer-item {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-item:hover {
+  transform: translateY(-2px); /* Slight raise effect on hover */
+  color: #f39c12; /* Highlight color */
+}
+
+/* Optional: Responsive adjustment */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 20px;
+  }
+  .footer-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

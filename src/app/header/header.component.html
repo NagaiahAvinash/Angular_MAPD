@@ -1,0 +1,26 @@
+<div class="header-container">
+  <nav class="navbar">
+    <a href="javascript:void(0)" class="logo" (click)="scrollToTop()"
+      >Portfolio</a
+    >
+    <div class="search-container">
+      <input
+        type="text"
+        [(ngModel)]="searchText"
+        placeholder="Search..."
+        class="search-input"
+      />
+      <div *ngIf="searchText" class="dropdown-content">
+        <p>You are searching for: {{ searchText }}</p>
+      </div>
+
+      <button class="search-btn">Search</button>
+    </div>
+    <div class="social-links">
+      <a href="{{ linkedInUrl }}" target="_blank" class="social-btn"
+        >LinkedIn</a
+      >
+      <a href="{{ githubUrl }}" target="_blank" class="social-btn">GitHub</a>
+    </div>
+  </nav>
+</div>

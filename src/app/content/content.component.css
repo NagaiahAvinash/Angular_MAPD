@@ -1,0 +1,143 @@
+/* General Section Styles */
+.about-section,
+.skills-section,
+.projects-section,
+.contact-toggle-section {
+  display: flex;
+  flex-direction: column; /* Adjust for vertical layout */
+  align-items: center; /* Center content for a polished look */
+  margin-bottom: 40px; /* Increase spacing between sections */
+  width: 100%; /* Ensure full width usage */
+}
+
+/* Profile Photo Styles */
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensure the image fits well */
+  margin-bottom: 20px; /* Adjust spacing */
+}
+
+/* Description and Download Button Styles */
+.about-description,
+.project-description {
+  text-align: justify; /* Improve readability */
+  margin: 0 10px; /* Add some horizontal spacing */
+}
+
+.download-resume {
+  display: inline-block; /* Keeps the button inline */
+  margin-top: 10px; /* Space above the button */
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
+  padding: 5px 10px; /* Reduced padding for a smaller button */
+  border-radius: 20px; /* Rounded corners */
+  text-decoration: none; /* Removes underline from link */
+  font-size: 14px; /* Smaller font size for the button text */
+  text-align: center; /* Ensures text alignment is centered */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.download-resume:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Skills Section Styles */
+.skills-section ul {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center items */
+  list-style: none;
+  padding: 0;
+}
+
+.skills-section li {
+  background-color: #f0f0f0;
+  margin: 10px; /* Increase spacing */
+  padding: 10px 20px; /* Larger padding for better visibility */
+  border-radius: 20px; /* More pronounced rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.skills-section li:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Projects Section and Carousel Styles */
+.project-carousel {
+  display: flex;
+  overflow-x: auto; /* Ensure horizontal scrolling */
+  padding: 10px 0; /* Add some vertical padding */
+}
+
+.project-card {
+  margin: 0 20px; /* Adjust margins for spacing */
+  flex: none; /* Override previous flex setting */
+  width: 300px; /* Standardize width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Consistent shadow */
+  border-radius: 10px; /* Rounded corners for cards */
+  overflow: hidden; /* Hide overflow */
+}
+
+.project-photo {
+  display: block; /* Ensure it's block level for width control */
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-top-left-radius: 10px; /* Match card's rounded corners */
+  border-top-right-radius: 10px;
+}
+
+/* Contact Section Styles */
+.contact-toggle-section p,
+.contact-toggle-section button,
+.email-input-container {
+  text-align: center; /* Center align text */
+  margin: 10px 0; /* Standardize margins */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* More pronounced rounded corners */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Smooth transition for hover effects */
+}
+
+button:hover {
+  opacity: 0.9; /* Subtle hover effect */
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Email Input and Button Styles */
+.email-input-container {
+  display: flex;
+  justify-content: center; /* Center the container */
+  width: 100%; /* Full width for alignment */
+}
+
+.email-input {
+  flex-grow: 1; /* Allow input to fill space */
+  margin-right: -50px; /* Negative margin to overlay button */
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 50px; /* Rounded input field */
+  font-size: 16px;
+}
+
+.send-email-btn {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%; /* Circular button */
+  padding: 10px 15px;
+  margin-left: auto; /* Push button to the right */
+  transition: background-color 0.2s ease-in-out;
+}
+
+.send-email-btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

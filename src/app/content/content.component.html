@@ -1,0 +1,89 @@
+<p>Avinash Nagaiah</p>
+<section>
+  <h2>{{ data }}</h2>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <img src="/assets/about_pic.jpg" alt="Your Photo" class="profile-photo" />
+    <div class="about-description">
+      <p>
+        As an enthusiastic Software Developer, I have cultivated a diverse skill
+        set across both front-end and back-end technologies, enabling me to
+        create dynamic, responsive web applications that stand at the
+        intersection of innovation and user-centric design. My journey is
+        characterized by a profound passion for technology and a steadfast
+        dedication to crafting solutions that significantly enhance user
+        experiences. With expertise in languages such as JavaScript, frameworks
+        like Angular and React, and back-end technologies including Node.js, I
+        excel in developing applications that are not only visually appealing
+        but also robust and scalable under the hood. By marrying intuitive UI/UX
+        designs with efficient back-end services, I strive to deliver products
+        that are both impactful and aligned with the users' needs. My approach
+        to development is holistic and collaborative, always aiming to learn
+        from peers and contribute to the team's success. I invite you to explore
+        my professional journey further by downloading my resume, which details
+        my projects and the skills I bring to the forefront in the evolving
+        landscape of web development.
+      </p>
+      <a href="/assets/Avinash_Nagaiah.pdf" download="" class="download-resume"
+        >Download Resume</a
+      >
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="skills-section">
+    <h3>My Skills</h3>
+    <ul>
+      <li>JavaScript</li>
+      <li>Angular</li>
+      <li>Node.js</li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="projects-section">
+    <h3>My Projects</h3>
+    <div class="project-carousel">
+      <!-- Example Project 1 -->
+      <div class="project-card">
+        <img
+          src="assets/github-mark-white.jpg"
+          alt="Project Image"
+          class="project-photo"
+        />
+        <div class="project-description">
+          <p>
+            This project is a web application designed to simplify todolist . It
+            features a user-friendly interface and real-time collaboration
+            capabilities.
+          </p>
+          <a href="https://github.com/NagaiahAvinash/TodoList" target="_blank"
+            >Take me to GitHub</a
+          >
+        </div>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </div>
+
+  <!-- Contact Toggle Section -->
+  <div class="contact-toggle-section">
+    <p>Do you want to contact me?</p>
+    <button (click)="toggleContact('yes')">Yes</button>
+    <button (click)="toggleContact('no')">No</button>
+    <div *ngIf="showContactForm" class="email-input-container">
+      <input
+        type="email"
+        [(ngModel)]="email"
+        placeholder="Your email"
+        class="email-input"
+      />
+      <button (click)="sendEmail()" class="send-email-btn">Send</button>
+    </div>
+    <div *ngIf="showContactRefusal">
+      <p>Unfortunate that you cannot contact the legend.</p>
+    </div>
+  </div>
+</section>
